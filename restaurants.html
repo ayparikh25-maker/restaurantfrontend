@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurants - Foodie</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Foodie</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="restaurants.html" class="active">Restaurants</a>
+      <a href="orders.html">My Orders</a>
+      <a href="profile.html">Profile</a>
+    </div>
+    <button class="cart-btn" onclick="openCart()">🛒 Cart</button>
+  </nav>
+
+  <section class="section">
+    <h1 class="page-title">All Restaurants</h1>
+
+    <input type="text" id="pageSearch" class="page-search"
+           placeholder="Search restaurants or cuisines..." oninput="runSearch()">
+
+    <div class="chips" id="chips"></div>
+
+    <p class="result-count" id="resultCount"></p>
+    <div class="restaurant-grid" id="restaurantList"></div>
+  </section>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/restaurants.js"></script>
+</body>
+</html>
